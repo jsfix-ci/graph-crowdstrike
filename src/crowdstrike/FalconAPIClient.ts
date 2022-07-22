@@ -263,7 +263,9 @@ export class FalconAPIClient {
       } else {
         throw new IntegrationProviderAPIError({
           status: response.status,
-          statusText: response.statusText,
+          statusText: /* TODO: JSFIX could not patch the breaking change:
+          Response.statusText no longer sets a default message derived from the HTTP status code*/
+          response.statusText,
           endpoint,
         });
       }

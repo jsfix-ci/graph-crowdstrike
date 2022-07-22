@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@jupiterone/integration-sdk-runtime": "^8.8.0",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^3.2.9"
   },
   "peerDependencies": {
     "@jupiterone/integration-sdk-core": "^8.8.0"
